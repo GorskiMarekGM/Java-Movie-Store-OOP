@@ -5,6 +5,24 @@ import pl.wsb.students.course.model.enums.EMovieGenre;
 import java.util.List;
 
 public abstract class Movie {
+
+    public Movie(String title, int stock) {
+        this.title = title;
+        this.stock = stock;
+    }
+
+    public Movie(
+            String title, String releaseYear, EMovieGenre genre, Director director,
+            List<Actor> actors, int stock
+    ) {
+        this.title = title;
+        this.releaseYear = releaseYear;
+        this.genre = genre;
+        this.director = director;
+        this.actors = actors;
+        this.stock = stock;
+    }
+
     private String title;
     private String releaseYear;
     private EMovieGenre genre;
