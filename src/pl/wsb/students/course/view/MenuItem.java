@@ -21,7 +21,7 @@ public class MenuItem {
         if (action == null) {
             System.err.println("No action provided...");
             return;
-        } //if
+        }
         action.run();
     }
 }
